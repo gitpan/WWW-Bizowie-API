@@ -1,0 +1,28 @@
+WWW::Bizowie::API
+====================
+
+Perl interface to the Bizowie.com API
+
+INSTALLATION
+
+To install this module, type the following:
+
+perl Makefile.pl
+make
+make test
+make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+    WWW::Bizowie::API::Response
+    LWP::UserAgent
+    HTTP::Request::Common
+    Try::Tiny
+    JSON
+
+COPYRIGHT AND LICENSE
+
+Copyright (C) 2013 OHPA Software. All rights reserved.
+
