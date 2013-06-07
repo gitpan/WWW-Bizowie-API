@@ -18,11 +18,12 @@ This module requires these other modules and libraries:
 
     WWW::Bizowie::API::Response
     LWP::UserAgent
+    Mo
     HTTP::Request::Common
     Try::Tiny
     JSON
 
 COPYRIGHT AND LICENSE
 
-Copyright (C) 2013 OHPA Software. All rights reserved.
+Copyright (C) 2013 Bizowie. All rights reserved.
 

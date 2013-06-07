@@ -9,7 +9,7 @@ use HTTP::Request::Common;
 use Try::Tiny;
 use JSON;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -17,16 +17,17 @@ WWW::Bizowie::API - Perl interface to the Bizowie.com API
 
 =head1 SYNOPSIS
 
-my $bz = WWW::Bizowie::API->new(
-    api_key => '02cc7058-cd22-4c8e-ad7c-a8f3f2a64bd0',
-    site    => 'mysite.bizowie.com',
-);
+  my $bz = WWW::Bizowie::API->new(
+      api_key    => '02cc7058-cd22-4c8e-ad7c-a8f3f2a64bd0',
+      secret_key => '58c57abc-1e16-3571-bb35-73876bcef746',
+      site       => 'mysite.bizowie.com',
+  );
 
-$bz->call(
-    '/tickets/add_comment/0824', {
-        comment => "I added this comment via the API!",
-    },
-);
+  $bz->call(
+      '/tickets/add_comment/0824', {
+          comment => "I added this comment via the API!",
+      },
+  );
 
 =head1 METHODS
 
@@ -112,11 +113,11 @@ HTTP::Request::Common, LWP::UserAgent, Try::Tiny, JSON, Mo
 
 =head1 AUTHORS
 
-OHPA Software <http://ohpasw.com>
+Bizowie <http://bizowie.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2013 OHPA Software.
+Copyright (C) 2013 Bizowie
 
 This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 

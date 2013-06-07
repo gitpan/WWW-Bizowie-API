@@ -5,7 +5,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME              => 'WWW::Bizowie::API',
     VERSION_FROM      => 'lib/WWW/Bizowie/API.pm', # finds $VERSION
-    PREREQ_PM         => { 'LWP::UserAgent' => 0, 'HTTP::Request::Common' => 0, 'Try::Tiny' => 0, 'JSON' => 0 },
+    PREREQ_PM         => { 'LWP::UserAgent' => 0, 'HTTP::Request::Common' => 0, 'Try::Tiny' => 0, 'JSON' => 0, 'Mo' => 0 },
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/WWW/Bizowie/API.pm', # retrieve abstract from module
        AUTHOR         => 'Michael Aquilina <aquilina@cpan.org>') : ()),
